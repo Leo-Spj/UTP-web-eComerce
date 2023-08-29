@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <caption>Clase 2</caption>
+        <tr>
+            <th scope="col">Operador</th>
+            <th>Internet</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <th>Claro</th>
+            <td rowspan="2">8GB</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th>Movistar</th>
+            <td>200</td>
+        </tr>
+        <tr>
+            <th>Entel</th>
+            <td rowspan="2">5GB</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <th>Bitel</th>
+            <td>400</td>
+        </tr>
+        <tr>
+            <th colspan="2" >Total</th>
+            <td>1000</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table border="1">
+        <caption>Scope, Rowspan, Colspan, tbody, tfoot y thead</caption>
+
+        <thead style="color: red">
+            <tr>
+                <th rowspan="2">Mes</th>
+                <th colspan="2">Norte</th>
+                <th colspan="2">Sur</th>
+            </tr> <br>
+            <tr>
+                <th>Damas</th>
+                <th>Caballeros</th>
+                <th>Damas</th>
+                <th>Caballeros</th>
+            </tr>
+        </thead>
+
+        <tbody style="background-color: yellow;">
+            <tr>
+                <th>Enero</th>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>            
+            </tr>
+            <tr>
+                <th>Febrero</th>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                
+            </tr>
+        </tbody>
+        
+        <tbody style="background-color: yellowgreen;">
+            <tr>
+                <th>Marzo</th>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>   
+            </tr>
+        </tbody>
+
+        <tfoot style="color: red; background-color: cornflowerblue;">
+            <tr>
+                <th>Total</th>
+                <td colspan="2">100</td>
+                <td colspan="2">200</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <br>
+
+    <table border="1">
+        <caption>Agrupacion de columnas</caption>
+
+        <colgroup span="1" style="background-color: red;"></colgroup>
+        <colgroup span="2" style="background-color: blue;"></colgroup>
+        <colgroup span="2" style="background-color: green;"></colgroup>
+
+        <thead style="color: red">
+            <tr>
+                <th rowspan="2">Mes</th>
+                <th colspan="2">Norte</th>
+                <th colspan="2">Sur</th>
+            </tr> <br>
+            <tr>
+                <th>Damas</th>
+                <th>Caballeros</th>
+                <th>Damas</th>
+                <th>Caballeros</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Enero</th>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>            
+            </tr>
+            <tr>
+                <th>Febrero</th>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+                <td>400</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <p>Listas ordenadas, start, type, reversed</p>
+
+    <!-- normal -->
+    <ol> 
+        <li>Valeria</li>
+        <li>Leonardo</li>
+        <li>Fatima</li>
+        <li>Cecilia</li>
+        <li>Yvan</li>
+    </ol>
+
+    <!-- start -->
+    <ol start="6"> 
+        <li>Valeria</li>
+        <li>Leonardo</li>
+        <li>Fatima</li>
+        <li>Cecilia</li>
+        <li>Yvan</li>
+    </ol>
+
+    <!-- type -->
+    <ol type="A"> <!-- puede empesar con A, a, I, i, 1 -->
+        <li>Valeria</li>
+        <li>Leonardo</li>
+        <li>Fatima</li>
+        <li>Cecilia</li>
+        <li>Yvan</li>
+    </ol>
+
+    <!-- reversed -->
+    <ol reversed> 
+        <li>Valeria</li>
+        <li>Leonardo</li>
+        <li>Fatima</li>
+        <li>Cecilia</li>
+        <li>Yvan</li>
+    </ol>
+
+    <br>
+
+</body>
+</html>
