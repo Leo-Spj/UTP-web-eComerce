@@ -140,43 +140,91 @@
 
     <p>Listas ordenadas, start, type, reversed</p>
 
-    <!-- normal -->
-    <ol> 
-        <li>Valeria</li>
-        <li>Leonardo</li>
-        <li>Fatima</li>
-        <li>Cecilia</li>
-        <li>Yvan</li>
-    </ol>
-
-    <!-- start -->
-    <ol start="6"> 
-        <li>Valeria</li>
-        <li>Leonardo</li>
-        <li>Fatima</li>
-        <li>Cecilia</li>
-        <li>Yvan</li>
-    </ol>
-
-    <!-- type -->
-    <ol type="A"> <!-- puede empesar con A, a, I, i, 1 -->
-        <li>Valeria</li>
-        <li>Leonardo</li>
-        <li>Fatima</li>
-        <li>Cecilia</li>
-        <li>Yvan</li>
-    </ol>
-
-    <!-- reversed -->
-    <ol reversed> 
-        <li>Valeria</li>
-        <li>Leonardo</li>
-        <li>Fatima</li>
-        <li>Cecilia</li>
-        <li>Yvan</li>
-    </ol>
+    <table border="1">
+        <tr>
+            <th>Normal</th>
+            <th>Start en 6</th>
+            <th>Type</th>
+            <th>Reversed</th>
+            <th>Circle (square, disc)</th>
+        </tr>
+        <tr>
+            <td>
+                <!-- normal -->
+                <ol> 
+                    <li>Valeria</li>
+                    <li>Leonardo</li>
+                    <li>Fatima</li>
+                    <li>Cecilia</li>
+                    <li>Yvan</li>
+                </ol>
+            </td>
+            <td>
+                <!-- start -->
+                <ol start="6"> 
+                    <li>Valeria</li>
+                    <li>Leonardo</li>
+                    <li>Fatima</li>
+                    <li>Cecilia</li>
+                    <li>Yvan</li>
+                </ol>
+            </td>
+            <td>
+                <!-- type -->
+                <ol type="A"> <!-- puede empesar con A, a, I, i, 1 -->
+                    <li>Valeria</li>
+                    <li>Leonardo</li>
+                    <li>Fatima</li>
+                    <li>Cecilia</li>
+                    <li>Yvan</li>
+                </ol>
+            </td>
+            <td>
+                <!-- reversed -->
+                <ol reversed> 
+                    <li>Valeria</li>
+                    <li>Leonardo</li>
+                    <li>Fatima</li>
+                    <li>Cecilia</li>
+                    <li>Yvan</li>
+                </ol>
+            </td>
+            <td>
+                <!-- circle, square, disc -->
+                <ul type="circle"> 
+                    <li>Valeria</li>
+                    <li>Leonardo</li>
+                    <li>Fatima</li>
+                    <li>Cecilia</li>
+                    <li>Yvan</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 
     <br>
 
+    <!-- 
+        <dl>: "definition list" (lista de definición).
+        <dt>: "definition term" (término de definición).
+        <dd>: "definition description" (descripción de definición).  
+     -->
+    <p>Listas de definicion</p>
+    <dl>
+        <dt>Valeria</dt>
+        <dd>Leonardo</dd>
+        <dd>Fatima</dd>
+        <dd>Cecilia</dd>
+        <dd>Yvan</dd>
+    </dl>
+
+
+    <br>
+
+    <!-- reproductor de musica -->
+
+    <audio src="audio.mp3" controls></audio>
+
+<br>
 </body>
 </html>
