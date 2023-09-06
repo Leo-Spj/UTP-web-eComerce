@@ -10,37 +10,90 @@
     <!-- text, checkbox, radio, reset -->
 
     <!-- formulario para engresar datos personalesm nombre correo telefono direccion dni estado civil -->
+    <!-- añadiendo borde -->
+    <h1>Formularios</h1>
+    <p>
+        <ul>
+            <li>text</li>
+            <li>checkbox</li>
+            <li>radio</li>
+            <li>reset</li>
+        </ul>
+    </p>
+    <br>
+
     <form>
-        <label>Datos Personales</label>
-        <br>
+        <fieldset>
+            <legend>Datos Personales</legend>
 
-        <label>Nombre</label>
-        <input type="text" name="nombre">
-        <br>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
 
-        <label>Correo</label>
-        <input type="email" name="correo">
-        <br>
+            <label>Correo</label>
+            <input type="email" name="correo">
+            <br>
 
-        <label>Telefono</label>
-        <input type="tel" name="telefono">
-        <br>
+            <label>Telefono</label>
+            <input type="tel" name="telefono">
+            <br>
 
-        <label>Direccion</label>
-        <input type="text" name="direccion">
-        <br>
+            <label>Direccion</label>
+            <input type="text" name="direccion">
+            <br>
 
-        <label>DNI</label>
-        <input type="number" name="dni">
-        <br>
+            <label>DNI</label>
+            <input type="number" name="dni">
+            <br>
 
-        <label>Estado Civil</label>
-        <input type="radio" name="estado_civil" value="soltero">Soltero
-        <input type="radio" name="estado_civil" value="casado">Casado
-        <br>
+            <label>Estado Civil</label>
+            <input type="radio" name="estado_civil" value="soltero">Soltero
+            <input type="radio" name="estado_civil" value="casado">Casado
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Academicos</legend>
+                <select name="grado_instruccion">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="tecnico">Tecnico</option>
+                <option value="universitario">Universitario</option>
+            </select>
+            <br>
+
+            <!-- lista multiple con las redes sociales que mas utiliza -->
+            <label>Redes Sociales</label>
+            <select multiple name="redes_sociales">
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">Linkedin</option>
+            </select>
+            <br>
+
+            <!-- text area para dejar un mensaje -->
+            <label>Mensaje</label>
+            <textarea name="mensaje"></textarea>
+            <br>
+        </fieldset>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpiar">
+
     </form>
+
+    <br>
+
+    <h1>iframe</h1>
+    <p>Tema de la clase 2:</p>
+    <iframe src="clase02.html" width="45%" height="200px"></iframe>
+
+    <h1>frameset</h1>
+    <p>Tema de la clase 2:</p>
+    <frameset cols="10%, 50%" bordercolor="##010123">
+        <frame src="clase02.html">
+        <frame src="clase02.html">
+    </frameset>
 </body>
 </html>
